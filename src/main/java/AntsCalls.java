@@ -5,8 +5,8 @@ import com.sun.jna.ptr.IntByReference;
 
 public class AntsCalls {
     public interface CLib extends Library {
-        CLib Instance = Native.load("sayhello", CLib.class);
-
+//        CLib Instance = Native.load("sayhello", CLib.class);
+        CLib Instance = Native.load("lib", CLib.class);
         void hello();
 
         int getsum(int a, int b, int[] sum);
